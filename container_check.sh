@@ -1,6 +1,6 @@
 nginx_container_id=`docker ps -aq --filter 'name=nginx'`
 
-if[-n "$nginx_container_id"];
+if [-n "$nginx_container_id"];
 	then
 		echo "nginx container exist"
 		docker stop $nginx_container_id
